@@ -15,9 +15,21 @@ header {
 }
 .container {
     max-width: 1200px;
-    margin: o auto;
+    margin: 0 auto;
     padding: 0 60px;
 }
 .logo img {
     width: 320px;
+}
+section {
+    display: grid; 
+    justify-content: center; 
+    align-content: center;  
+}
+section:nth-child(add) {
+    height: 100vh;
+    background-color: #cae1f1;     
+}section:nth-child(even) {
+    height: 100vh;
+    background-color: #b7d5eb;
 }
