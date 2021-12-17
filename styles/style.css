@@ -19,12 +19,14 @@ header {
 }
 .container {
     max-width: 1200px;
+    height: 100px;
     margin: 0 auto;
     padding: 0 60px;
     display: grid;
     grid-template-areas: 
          'lgo ... nav'; 
-    grid-template-columns: auto 1fr auto;        
+    grid-template-columns: auto 1fr auto;
+    align-content: center;                
 }
 .logo {
     grid-area: lgo;    
@@ -35,10 +37,19 @@ header {
 .nav-bar {
     grid-area: nav;
     font-size: 18px;
+    display: grid;
+    align-content: center;
 }
+.nav-bar ul{
+    display: grid;
+    grid-auto-flow: column;
+    grid-gap: 20px;    
+}    
 .nav-bar a {
     font-family: "Gravity-Bold";
     font-size: 1em;
+    text-transform: uppercase;
+    color:#c5eff7;
 }
 main {
     font-size: 10px;   
