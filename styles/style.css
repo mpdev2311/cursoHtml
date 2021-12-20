@@ -40,8 +40,11 @@ header {
 .logo {
     grid-area: lgo;    
 }
-.logo img {
+.max-logo img {
     width: 200px;
+}
+.min-logo img {
+    width: 180px;
 }
 .nav-bar {
     grid-area: nav;
