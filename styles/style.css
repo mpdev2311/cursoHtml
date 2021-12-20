@@ -15,18 +15,20 @@ a {
 }
 header {
     position: fixed;
-    width: 100%;
+    width: 100%;    
     z-index: 1;
 }
 .max-header {
     background-color: #c5eff7;
+    height: 100px;
 }
 .min-header {
     background-color: #2574a9;
+    height: 80px;
 } 
 .container {
     max-width: 1200px;
-    height: 100px;
+    height: 100%;
     margin: 0 auto;
     padding: 0 60px;
     display: grid;
