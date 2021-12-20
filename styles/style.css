@@ -17,6 +17,7 @@ header {
     position: fixed;
     width: 100%;    
     z-index: 1;
+    font-size: 10px; 
 }
 .max-header {
     background-color: #c5eff7;
@@ -41,7 +42,7 @@ header {
     grid-area: lgo;    
 }
 .max-logo img {
-    width: 200px;
+    width: 150px;
 }
 .min-logo img {
     width: 180px;
@@ -49,8 +50,7 @@ header {
 .nav-bar {
     grid-area: nav;
     display: grid;
-    align-content: center;
-    font-size: 10px;    
+    align-content: center;      
 }
 .nav-bar ul{
     display: grid;
@@ -58,10 +58,17 @@ header {
     grid-gap: 20px;    
 }    
 .nav-bar a {
-    font-family: "Gravity-Bold";
-    font-size: 1em;
+    font-family: "Gravity-Bold";    
     text-transform: uppercase;
+    
+}
+.max-nav a {
+    font-size: 1em;
     color:#c5eff7;
+}
+.min-nav a {
+    font-size: 0.875em;
+    color:#2574a9;
 }
 .ghost {
     width: 100%;
