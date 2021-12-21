@@ -21,11 +21,12 @@ header {
     transition: all 0.4s ease-out;
 }
 .max-header {
-    background-color: #c5eff7;
+    background-color: #292b2c;
+   
     height: 100px;    
 }
 .min-header {
-    background-color: #2574a9;
+    background-color: #c5eff7;
     height: 80px;
 } 
 .container {
@@ -39,6 +40,24 @@ header {
     grid-template-columns: auto 1fr auto;
     align-content: center;                
 }
+main section{
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    font-family: "Gravity-Bold"; 
+    font-size: 2em;
+    color: #2574a9; 
+}
+
+main section:nth-child(odd){
+    height: 100vh;
+    background-color: #b7d5eb;
+}
+main section:nth-child(even){
+    height: 100vh;
+    background-color: #b7d5eb;
+}
+
 .logo {
     grid-area: lgo;    
 }
@@ -65,7 +84,6 @@ header {
     font-family: "Gravity-Bold";    
     text-transform: uppercase;
     transition: all 0.4s ease-out;
-    
 }
 .max-nav a {
     font-size: 1em;
@@ -81,21 +99,5 @@ header {
     background-color:  #cae1f1;
 }
 main {
-    font-size: 10px;   
-}
-main section {
-    display: grid; 
-    justify-content: center; 
-    align-content: center;
-    font-family: "Gravity-Bold"; 
-    font-size: 2em;
-    color: #2574a9; 
-}
-main section:nth-child(add) {
-    height: 100vh;
-    background-color: #cae1f1;     
-}
-main section:nth-child(even) {
-    height: 100vh;
-    background-color: #b7d5eb;
+    font-size: 15px;   
 }
