@@ -98,6 +98,28 @@ main section:nth-child(even){
     height: 100px;
     background-color:  #cae1f1;
 }
+@media (max-width: 768px) {
+    .max-header {               
+        height: 80px;    
+    }
+    .min-header {        
+        height: 60px;
+    }
+    .container {        
+        padding: 0 20px;        
+        grid-template-areas: 
+             'lgo ... nav';                       
+    }
+    .max-logo img {
+        width: 160px;
+    }
+    .min-logo img {
+        width: 150px;
+    }
+    .nav-bar {
+        display: none;
+    }
+}
 main {
     font-size: 15px;   
 }
