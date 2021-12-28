@@ -105,7 +105,8 @@ main section:nth-child(even){
     .min-header {        
         height: 60px;
     }
-    .container {        
+    .container {
+        position: relative;        
         padding: 0 20px;        
         grid-template-areas: 
              'lgo ... mnu';                       
@@ -146,8 +147,21 @@ main section:nth-child(even){
         background-color:#c5eff7 ;
     }
     .nav-bar {
-        display: none;
+       position: absolute;
+       top: 80px;
+       left: 0;
+       width: 100%;
+       height: calc(100vh - 80px);
+       background-color: #2980b9;
     }
+    .nav-bar ul { 
+         justify-content: center;     
+        grid-auto-flow: row;
+        grid-gap: 80px;    
+    }
+    .nav-bar li {
+        text-align: center;
+    }  
 }
 main {
     font-size: 15px;   
