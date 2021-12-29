@@ -35,8 +35,13 @@ function toggleMenu() {
     } else {
         $navBar.classList.remove('menu-opened');
         isOpen = false;
-    }
-    
+    }    
+}
+$navBar.addEventListener('click',navClick,false);
+function navClick(evt) {
+    if (evt.target.tagName == 'A'); {
+        toggleMenu();
+    }   
 }
      
 
