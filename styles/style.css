@@ -152,6 +152,14 @@ main section:nth-child(even){
     .min-hambuger, .min-hambuger::before, .min-hambuger::after {
         background-color: #292b2c;
     }
+    .close-btn {
+        width: 32px;
+        transform: rotateZ(45deg);
+    }
+    .close-btn::before , .close-btn::after {
+        top: 0;
+        transform: rotateZ(90deg);
+    }
     .nav-bar {
        position: absolute;     
        left: 0;
